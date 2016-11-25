@@ -22,6 +22,11 @@
 		745E07281C0A9A0700044D20 /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E07271C0A9A0700044D20 /* CoreTextData.m */; };
 		745E072C1C0B054100044D20 /* Content.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 745E072A1C0AD99D00044D20 /* Content.json */; };
 		745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E072E1C0C907800044D20 /* CoreTextImageData.m */; };
+		DBDD58A91DE6BD3D00473F9A /* TELabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58A81DE6BD3D00473F9A /* TELabel.m */; };
+		DBDD58AC1DE6D1FC00473F9A /* TELabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58AB1DE6D1FC00473F9A /* TELabelViewController.m */; };
+		DBDD58AF1DE7D8A900473F9A /* TELabelLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58AE1DE7D8A900473F9A /* TELabelLayoutManager.m */; };
+		DBDD58B11DE8156200473F9A /* OriginalExpression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBDD58B01DE8156200473F9A /* OriginalExpression.bundle */; };
+		DBDD58B41DE820C300473F9A /* TETextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58B31DE820C300473F9A /* TETextAttachment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,15 @@
 		745E072A1C0AD99D00044D20 /* Content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content.json; sourceTree = "<group>"; };
 		745E072D1C0C907800044D20 /* CoreTextImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextImageData.h; sourceTree = "<group>"; };
 		745E072E1C0C907800044D20 /* CoreTextImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextImageData.m; sourceTree = "<group>"; };
+		DBDD58A71DE6BD3D00473F9A /* TELabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TELabel.h; sourceTree = "<group>"; };
+		DBDD58A81DE6BD3D00473F9A /* TELabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TELabel.m; sourceTree = "<group>"; };
+		DBDD58AA1DE6D1FC00473F9A /* TELabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TELabelViewController.h; sourceTree = "<group>"; };
+		DBDD58AB1DE6D1FC00473F9A /* TELabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TELabelViewController.m; sourceTree = "<group>"; };
+		DBDD58AD1DE7D8A900473F9A /* TELabelLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TELabelLayoutManager.h; sourceTree = "<group>"; };
+		DBDD58AE1DE7D8A900473F9A /* TELabelLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TELabelLayoutManager.m; sourceTree = "<group>"; };
+		DBDD58B01DE8156200473F9A /* OriginalExpression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OriginalExpression.bundle; sourceTree = "<group>"; };
+		DBDD58B21DE820C300473F9A /* TETextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TETextAttachment.h; sourceTree = "<group>"; };
+		DBDD58B31DE820C300473F9A /* TETextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TETextAttachment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +193,7 @@
 		74343AFB1C0A00FE00A310A0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				DBDD58A61DE6BD0900473F9A /* TETextKit */,
 				74343AFC1C0A00FE00A310A0 /* Main */,
 			);
 			path = Sections;
@@ -189,6 +204,8 @@
 			children = (
 				74343AFD1C0A00FE00A310A0 /* ViewController.h */,
 				74343AFE1C0A00FE00A310A0 /* ViewController.m */,
+				DBDD58AA1DE6D1FC00473F9A /* TELabelViewController.h */,
+				DBDD58AB1DE6D1FC00473F9A /* TELabelViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -239,10 +256,24 @@
 		745E07291C0AD96400044D20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DBDD58B01DE8156200473F9A /* OriginalExpression.bundle */,
 				745E072A1C0AD99D00044D20 /* Content.json */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
+		};
+		DBDD58A61DE6BD0900473F9A /* TETextKit */ = {
+			isa = PBXGroup;
+			children = (
+				DBDD58A71DE6BD3D00473F9A /* TELabel.h */,
+				DBDD58A81DE6BD3D00473F9A /* TELabel.m */,
+				DBDD58AD1DE7D8A900473F9A /* TELabelLayoutManager.h */,
+				DBDD58AE1DE7D8A900473F9A /* TELabelLayoutManager.m */,
+				DBDD58B21DE820C300473F9A /* TETextAttachment.h */,
+				DBDD58B31DE820C300473F9A /* TETextAttachment.m */,
+			);
+			path = TETextKit;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -312,6 +343,8 @@
 				TargetAttributes = {
 					74343AC01C098DFF00A310A0 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M7R5TQ8AQY;
+						ProvisioningStyle = Manual;
 					};
 					74343AD91C098DFF00A310A0 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -350,6 +383,7 @@
 			files = (
 				74343AD41C098DFF00A310A0 /* LaunchScreen.storyboard in Resources */,
 				74343AD11C098DFF00A310A0 /* Assets.xcassets in Resources */,
+				DBDD58B11DE8156200473F9A /* OriginalExpression.bundle in Resources */,
 				74343ACF1C098DFF00A310A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,11 +413,15 @@
 				745E07281C0A9A0700044D20 /* CoreTextData.m in Sources */,
 				74343AC91C098DFF00A310A0 /* AppDelegate.m in Sources */,
 				74343B0A1C0A018800A310A0 /* UIView+frameAdjust.m in Sources */,
+				DBDD58B41DE820C300473F9A /* TETextAttachment.m in Sources */,
 				74343B051C0A011100A310A0 /* CTDisplayView.m in Sources */,
 				745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */,
+				DBDD58AC1DE6D1FC00473F9A /* TELabelViewController.m in Sources */,
 				74343AC61C098DFF00A310A0 /* main.m in Sources */,
 				74343B101C0A046900A310A0 /* CTFrameParser.m in Sources */,
 				74343B0D1C0A03BF00A310A0 /* CTFrameParserConfig.m in Sources */,
+				DBDD58A91DE6BD3D00473F9A /* TELabel.m in Sources */,
+				DBDD58AF1DE7D8A900473F9A /* TELabelLayoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,11 +560,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M7R5TQ8AQY;
 				GCC_PREFIX_HEADER = Macros/CoreText.pch;
 				INFOPLIST_FILE = CoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.birneysky.CoreText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2tech.Telescope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fa8c6289-9528-4d7c-a639-1877f395ef90";
+				PROVISIONING_PROFILE_SPECIFIER = Telescope_development;
 			};
 			name = Debug;
 		};
@@ -534,10 +575,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = Macros/CoreText.pch;
 				INFOPLIST_FILE = CoreText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.birneysky.CoreText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.v2tech.Telescope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

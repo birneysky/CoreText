@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9qs-Re-m15">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,24 +19,31 @@
                         <viewControllerLayoutGuide type="bottom" id="3Jc-YW-YX7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3Q-Nv-WaU" customClass="CTDisplayView">
-                                <rect key="frame" x="20" y="20" width="560" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="64" width="343" height="200"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="tL1-G3-eLc"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N3Q-Nv-WaU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Yc-18-YuO"/>
                             <constraint firstItem="N3Q-Nv-WaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ag0-EY-RGk"/>
                             <constraint firstItem="N3Q-Nv-WaU" firstAttribute="top" secondItem="a4g-JK-h8A" secondAttribute="bottom" id="ddG-eX-LHr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WHe-E6-r78">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="gnQ-CD-SSe">
+                            <connections>
+                                <segue destination="Hg2-8M-4Xg" kind="show" id="bGw-5m-tor"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ctView" destination="N3Q-Nv-WaU" id="BgP-mi-bFw"/>
                         <outlet property="heightContstraint" destination="tL1-G3-eLc" id="B5F-Xp-mGS"/>
@@ -40,7 +51,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211" y="46"/>
+            <point key="canvasLocation" x="1149.5999999999999" y="45.42728635682159"/>
+        </scene>
+        <!--Label View Controller-->
+        <scene sceneID="FYG-Tt-5lR">
+            <objects>
+                <viewController id="Hg2-8M-4Xg" customClass="TELabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GBn-0C-P60"/>
+                        <viewControllerLayoutGuide type="bottom" id="l0N-CW-jkH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eSk-7C-hUL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBE-mY-fOr" customClass="TELabel">
+                                <rect key="frame" x="0.0" y="104" width="375" height="228"/>
+                                <color key="backgroundColor" red="0.21193406649999999" green="0.77261078039999997" blue="0.3453101516" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="7v8-dk-dNK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sBE-mY-fOr" firstAttribute="top" secondItem="GBn-0C-P60" secondAttribute="bottom" constant="40" id="3C6-94-Hti"/>
+                            <constraint firstItem="sBE-mY-fOr" firstAttribute="leading" secondItem="eSk-7C-hUL" secondAttribute="leading" id="RjE-bN-ZGw"/>
+                            <constraint firstAttribute="trailing" secondItem="sBE-mY-fOr" secondAttribute="trailing" id="jZG-R4-N49"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hD7-JJ-eR0"/>
+                    <connections>
+                        <outlet property="label" destination="sBE-mY-fOr" id="0iW-RP-gTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMd-X5-xUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c4y-pP-zCf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9qs-Re-m15" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ly-Zb-Kej">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cP3-87-7Nc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZJ-Rs-Inh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210.40000000000001" y="45.42728635682159"/>
         </scene>
     </scenes>
 </document>
