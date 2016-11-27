@@ -47,7 +47,7 @@
 {
     if (!_layoutManager) {
         _layoutManager = [[TELabelLayoutManager alloc] init];
-        _layoutManager.allowsNonContiguousLayout = YES;
+        _layoutManager.allowsNonContiguousLayout = NO;
         _layoutManager.delegate = self;
     }
     return _layoutManager;

@@ -38,7 +38,7 @@
     paragraph.lineHeightMultiple = 1.1;
     
     //
-    NSMutableAttributedString* attributeString = [[NSMutableAttributedString alloc] initWithString:@"鹅鹅鹅，曲项向天歌，白毛浮绿水，红掌拨清波。锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦。青青子衿，悠悠我心，譬如朝露，去日苦多，慨当以慷，忧思难忘。" attributes:@{NSParagraphStyleAttributeName:paragraph,NSFontAttributeName:[UIFont systemFontOfSize:17.0f]}];
+    NSMutableAttributedString* attributeString = [[NSMutableAttributedString alloc] initWithString:@"鹅鹅鹅，曲项向天歌，白毛浮绿水，红掌拨清波。锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦。青青子衿，悠悠我心，譬如朝露，去日苦多，慨当以慷，忧思难忘。" attributes:@{NSParagraphStyleAttributeName:paragraph,NSFontAttributeName:[UIFont systemFontOfSize:30.0f]}];
     [attributeString appendAttributedString:[NSAttributedString attributedStringWithAttachment:textAttachment1]];
     [attributeString insertAttributedString:[NSAttributedString attributedStringWithAttachment:textAttachment2] atIndex:20];
     [self.label setAttributedText:attributeString];

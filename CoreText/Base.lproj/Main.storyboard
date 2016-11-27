@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9qs-Re-m15">
->>>>>>> 4e389a10544323ecf5bf3ca588607b450337862a
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9qs-Re-m15">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,11 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3Q-Nv-WaU" customClass="CTDisplayView">
-<<<<<<< HEAD
-                                <rect key="frame" x="16" y="20" width="343" height="500"/>
-=======
-                                <rect key="frame" x="16" y="64" width="343" height="200"/>
->>>>>>> 4e389a10544323ecf5bf3ca588607b450337862a
+                                <rect key="frame" x="16" y="64" width="343" height="500"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="tL1-G3-eLc"/>
@@ -59,9 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-=======
-            <point key="canvasLocation" x="1149.5999999999999" y="45.42728635682159"/>
+            <point key="canvasLocation" x="-678" y="18"/>
         </scene>
         <!--Label View Controller-->
         <scene sceneID="FYG-Tt-5lR">
@@ -97,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMd-X5-xUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962" y="45"/>
+            <point key="canvasLocation" x="150" y="19"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c4y-pP-zCf">
@@ -115,8 +105,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZJ-Rs-Inh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
->>>>>>> 4e389a10544323ecf5bf3ca588607b450337862a
-            <point key="canvasLocation" x="210.40000000000001" y="45.42728635682159"/>
+            <point key="canvasLocation" x="-1551" y="20"/>
         </scene>
     </scenes>
 </document>
