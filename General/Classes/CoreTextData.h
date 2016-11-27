@@ -55,7 +55,7 @@
 
 @interface CoreTextData : NSObject
 
-@property (nonatomic,assign)CTFrameRef ctFrame;
+@property (nonatomic,assign) CTFrameRef ctFrame;
 
 @property (nonatomic,assign) CGFloat height;
 

@@ -56,7 +56,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     CTFrameParserConfig* config = [[CTFrameParserConfig alloc] init];
     //config.textColor = [UIColor redColor];
-    config.width = 380;
+    config.width = 240;
 //    NSLog(@" width = %f",self.ctView.width);
 //    NSLog(@" widht = %f",self.view.frame.size.width);
     
