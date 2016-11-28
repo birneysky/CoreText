@@ -106,4 +106,39 @@
     }
 }
 
+
+- (CFIndex)touchIndexOfTouchPoint:(CGPoint)point rectHeight:(CGFloat)height{
+    
+    NSArray *lines = (NSArray*)CTFrameGetLines(self.ctFrame);
+    if (!lines) {
+        return -1;
+    }
+    CFIndex index = -1;
+    NSInteger lineCount = [lines count];
+    CGPoint *origins = (CGPoint*)malloc(lineCount * sizeof(CGPoint));
+    if (lineCount != 0) {
+        CTFrameGetLineOrigins(_ctFrame, CFRangeMake(0, 0), origins);
+        
+        for (int i = 0; i < lineCount; i++){
+            
+            CGPoint baselineOrigin = origins[i];
+            baselineOrigin.y = height - baselineOrigin.y;
+            
+            CTLineRef line = (__bridge CTLineRef)[lines objectAtIndex:i];
+            CGFloat ascent, descent;
+            CGFloat lineWidth = CTLineGetTypographicBounds(line, &ascent, &descent, NULL);
+            
+            CGRect lineFrame = CGRectMake(baselineOrigin.x, baselineOrigin.y - ascent, lineWidth, ascent + descent);
+            if (CGRectContainsPoint(lineFrame, point)){
+                index = CTLineGetStringIndexForPosition(line, point);
+                
+            }
+        }
+        
+    }
+    free(origins);
+    return index;
+    
+}
+
 @end

@@ -61,4 +61,13 @@
 
 @property (nonatomic,strong) NSArray* imageArray;
 
+/**
+ 根据用户手指的坐标获得 文字在整个字符串的index
+ 
+ @param point 当前手指的坐标
+ @param height 文本区域的高度
+ @return 文字索引
+ */
+- (CFIndex)touchIndexOfTouchPoint:(CGPoint)point rectHeight:(CGFloat)height;
+
 @end

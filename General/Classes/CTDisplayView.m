@@ -91,6 +91,14 @@
         }
         
     }
+    
+    
+    [self.data touchIndexOfTouchPoint:point rectHeight:self.bounds.size.height];
+    
+    
+    
+    
+    
 }
 
 @end
