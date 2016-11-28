@@ -19,6 +19,8 @@
 		74343B0A1C0A018800A310A0 /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 74343B091C0A018800A310A0 /* UIView+frameAdjust.m */; };
 		74343B0D1C0A03BF00A310A0 /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 74343B0C1C0A03BF00A310A0 /* CTFrameParserConfig.m */; };
 		74343B101C0A046900A310A0 /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 74343B0F1C0A046900A310A0 /* CTFrameParser.m */; };
+		744CF3561DEC6C2100AE61A4 /* CirculeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 744CF3551DEC6C2100AE61A4 /* CirculeView.m */; };
+		744CF3591DEC71C200AE61A4 /* CirculViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744CF3581DEC71C200AE61A4 /* CirculViewController.m */; };
 		745E07281C0A9A0700044D20 /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E07271C0A9A0700044D20 /* CoreTextData.m */; };
 		745E072C1C0B054100044D20 /* Content.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 745E072A1C0AD99D00044D20 /* Content.json */; };
 		745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E072E1C0C907800044D20 /* CoreTextImageData.m */; };
@@ -86,6 +88,10 @@
 		74343B0C1C0A03BF00A310A0 /* CTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
 		74343B0E1C0A046900A310A0 /* CTFrameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParser.h; sourceTree = "<group>"; };
 		74343B0F1C0A046900A310A0 /* CTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
+		744CF3541DEC6C2100AE61A4 /* CirculeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirculeView.h; sourceTree = "<group>"; };
+		744CF3551DEC6C2100AE61A4 /* CirculeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirculeView.m; sourceTree = "<group>"; };
+		744CF3571DEC71C200AE61A4 /* CirculViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirculViewController.h; sourceTree = "<group>"; };
+		744CF3581DEC71C200AE61A4 /* CirculViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirculViewController.m; sourceTree = "<group>"; };
 		745E07261C0A9A0700044D20 /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
 		745E07271C0A9A0700044D20 /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
 		745E072A1C0AD99D00044D20 /* Content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content.json; sourceTree = "<group>"; };
@@ -209,6 +215,8 @@
 				74343AFE1C0A00FE00A310A0 /* ViewController.m */,
 				DBDD58AA1DE6D1FC00473F9A /* TELabelViewController.h */,
 				DBDD58AB1DE6D1FC00473F9A /* TELabelViewController.m */,
+				744CF3571DEC71C200AE61A4 /* CirculViewController.h */,
+				744CF3581DEC71C200AE61A4 /* CirculViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -276,6 +284,8 @@
 				DBDD58AE1DE7D8A900473F9A /* TELabelLayoutManager.m */,
 				DBDD58B21DE820C300473F9A /* TETextAttachment.h */,
 				DBDD58B31DE820C300473F9A /* TETextAttachment.m */,
+				744CF3541DEC6C2100AE61A4 /* CirculeView.h */,
+				744CF3551DEC6C2100AE61A4 /* CirculeView.m */,
 			);
 			path = TETextKit;
 			sourceTree = "<group>";
@@ -416,11 +426,13 @@
 			files = (
 				74343AFF1C0A00FE00A310A0 /* ViewController.m in Sources */,
 				745E07281C0A9A0700044D20 /* CoreTextData.m in Sources */,
+				744CF3591DEC71C200AE61A4 /* CirculViewController.m in Sources */,
 				74343AC91C098DFF00A310A0 /* AppDelegate.m in Sources */,
 				74343B0A1C0A018800A310A0 /* UIView+frameAdjust.m in Sources */,
 				DBDD58B41DE820C300473F9A /* TETextAttachment.m in Sources */,
 				74343B051C0A011100A310A0 /* CTDisplayView.m in Sources */,
 				745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */,
+				744CF3561DEC6C2100AE61A4 /* CirculeView.m in Sources */,
 				DBDD58AC1DE6D1FC00473F9A /* TELabelViewController.m in Sources */,
 				74343AC61C098DFF00A310A0 /* main.m in Sources */,
 				74343B101C0A046900A310A0 /* CTFrameParser.m in Sources */,

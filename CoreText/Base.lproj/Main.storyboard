@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9qs-Re-m15">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9qs-Re-m15">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -86,7 +86,13 @@
                             <constraint firstAttribute="trailing" secondItem="sBE-mY-fOr" secondAttribute="trailing" id="jZG-R4-N49"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hD7-JJ-eR0"/>
+                    <navigationItem key="navigationItem" id="hD7-JJ-eR0">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="toh-Ud-4l8">
+                            <connections>
+                                <segue destination="wNE-Z2-thD" kind="show" id="xdv-nf-XQs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="label" destination="sBE-mY-fOr" id="0iW-RP-gTQ"/>
                     </connections>
@@ -94,6 +100,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMd-X5-xUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="150" y="19"/>
+        </scene>
+        <!--Circul View Controller-->
+        <scene sceneID="gPb-Jk-Kvh">
+            <objects>
+                <viewController id="wNE-Z2-thD" customClass="CirculViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CzH-kJ-Pgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="jYt-Fa-a0u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q0E-H3-PQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-rh-Zdl" customClass="CirculeView">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="MMv-0E-gPz"/>
+                                    <constraint firstAttribute="width" constant="240" id="rF2-h5-1Iv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EXw-rh-Zdl" firstAttribute="centerY" secondItem="q0E-H3-PQD" secondAttribute="centerY" id="M4g-Cp-IRU"/>
+                            <constraint firstItem="EXw-rh-Zdl" firstAttribute="centerX" secondItem="q0E-H3-PQD" secondAttribute="centerX" id="xi1-kf-rkE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cge-q6-aIW"/>
+                    <connections>
+                        <outlet property="circulView" destination="EXw-rh-Zdl" id="Rt6-Yo-wK2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tP7-xp-ghS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c4y-pP-zCf">
