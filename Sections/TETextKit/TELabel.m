@@ -116,7 +116,7 @@
     //textOffset.y = paddingHeight+_textInsets.top;
    // textOffset.y = _textInsets.top;
     textOffset.x = (self.bounds.size.width - size.width) / 2;
-    textOffset.y = _textInsets.top;
+    textOffset.y = 18;//_textInsets.top ;
     return textOffset;
 }
 
@@ -168,7 +168,7 @@
     
     CGPoint textOffset = [self textOffetWithTextSize:drawBounds.size];
     
-    [self.layoutManager drawBackgroundForGlyphRange:range atPoint:CGPointMake(0, 0)];
+    [self.layoutManager drawBackgroundForGlyphRange:range atPoint:textOffset];
     [self.layoutManager drawGlyphsForGlyphRange:NSMakeRange(0, self.textStorage.length) atPoint:textOffset];
 
 }
@@ -177,6 +177,14 @@
 #pragma mark - *** Api ***
 - (void)setAttributedText:(NSAttributedString *)attributedText
 {
+
+    
+    //计算文本大小
+    CGSize size =  [attributedText boundingRectWithSize:CGSizeMake(350, 0) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil].size;
+    
+    NSLog(@"attributeText %@",NSStringFromCGSize(size));
+    self.textContatiner.size = size;
+    
     [self.textStorage setAttributedString:attributedText];
 }
 

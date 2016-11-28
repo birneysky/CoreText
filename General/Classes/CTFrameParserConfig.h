@@ -6,14 +6,12 @@
 //  Copyright © 2015年 birneysky. All rights reserved.
 //
 
-/*
- 
- 用于配置绘制的参数，文字颜色，大小，行间距
- */
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ 用于配置绘制的参数，文字颜色，大小，行间距
+ */
 @interface CTFrameParserConfig : NSObject
 
 @property (nonatomic,assign) CGFloat width;

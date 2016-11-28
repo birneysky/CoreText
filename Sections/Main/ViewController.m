@@ -16,6 +16,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet CTDisplayView *ctView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightContstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *trailingConstraint;
 
 @end
 
@@ -56,7 +58,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     CTFrameParserConfig* config = [[CTFrameParserConfig alloc] init];
     //config.textColor = [UIColor redColor];
-    config.width = 240;
+    config.width = [UIScreen mainScreen].bounds.size.width - self.trailingConstraint.constant - self.leadingConstraint.constant;
 //    NSLog(@" width = %f",self.ctView.width);
 //    NSLog(@" widht = %f",self.view.frame.size.width);
     
@@ -68,7 +70,7 @@
     self.ctView.data = data;
     //self.ctView.height = data.height;
     self.heightContstraint.constant = data.height;
-    self.ctView.backgroundColor = [UIColor yellowColor];
+    //self.ctView.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
