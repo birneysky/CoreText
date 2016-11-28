@@ -65,6 +65,7 @@
     return _textContatiner;
 }
 
+
 #pragma mark - *** Initializer ****
 - (instancetype)initWithFrame:(CGRect)frame
 {
