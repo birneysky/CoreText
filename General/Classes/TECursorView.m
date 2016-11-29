@@ -15,6 +15,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         self.style = style;
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -60,6 +61,17 @@
 
 - (UIColor *)defaultColor; {
     return [UIColor colorWithRed:69/255.0 green:111/255.0 blue:238/255.0 alpha:1];
+}
+
+
+- (void)setPosition:(CGPoint)position
+{
+    _position = position;
+    self.origin = CGPointMake(position.x - self.width/ 2 , position.y - self.height);
+    if (TECursorStyleEnd == self.style) {
+        self.y += 2;
+    }
+    [self setNeedsDisplay];
 }
 
 @end

@@ -14,8 +14,8 @@
 {
     if (self = [super init]) {
         _width = 200.0f;
-        _fontSize = 16.0f;
-        _lineSpace = 8.0f;
+        _fontSize = 20.0f;
+        _lineSpace = 0.0f;
         _textColor = RGB(108, 108, 108);
     }
     

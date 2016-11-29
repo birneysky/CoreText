@@ -30,6 +30,16 @@
     self.frame = CGRectMake(self.x, y, self.width, self.height);
 }
 
+- (void)setOrigin:(CGPoint)point
+{
+    self.frame = CGRectMake(point.x, point.y, self.width, self.height);
+}
+
+- (CGPoint)origin
+{
+    return CGPointMake(self.x, self.y);
+}
+
 - (CGFloat)width
 {
     return self.frame.size.width;

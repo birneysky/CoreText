@@ -117,7 +117,7 @@
     NSInteger lineCount = [lines count];
     CGPoint *origins = (CGPoint*)malloc(lineCount * sizeof(CGPoint));
     if (lineCount != 0) {
-        CTFrameGetLineOrigins(_ctFrame, CFRangeMake(0, 0), origins);
+        CTFrameGetLineOrigins(self.ctFrame, CFRangeMake(0, 0), origins);
         
         for (int i = 0; i < lineCount; i++){
             
@@ -140,5 +140,51 @@
     return index;
     
 }
+
+- (NSRange)characterRangeAtIndex:(NSInteger)index
+{
+    __block NSArray *lines = (NSArray*)CTFrameGetLines(self.ctFrame);
+    NSInteger count = [lines count];
+    __block NSRange returnRange = NSMakeRange(NSNotFound, 0);
+    
+    for (int i=0; i < count; i++) {
+        
+        __block CTLineRef line = (__bridge CTLineRef)[lines objectAtIndex:i];
+        CFRange cfRange = CTLineGetStringRange(line);
+        CFRange cfRange_Next = CFRangeMake(0, 0);
+        if (i < count - 1) {
+            __block CTLineRef line_Next = (__bridge CTLineRef)[lines objectAtIndex:i+1];
+            cfRange_Next = CTLineGetStringRange(line_Next);
+        }
+        
+        NSRange range = NSMakeRange(cfRange.location == kCFNotFound ? NSNotFound : cfRange.location, cfRange.length == kCFNotFound ? 0 : cfRange.length);
+        
+        if (index >= range.location && index <= range.location+range.length) {
+            
+            if (range.length > 1) {
+                NSRange newRange = NSMakeRange(range.location, range.length + cfRange_Next.length);
+                [self.contentText enumerateSubstringsInRange:newRange options:NSStringEnumerationByWords usingBlock:^(NSString *subString, NSRange subStringRange, NSRange enclosingRange, BOOL *stop){
+                    
+                    if (index - subStringRange.location <= subStringRange.length&&index - subStringRange.location!=0) {
+                        returnRange = subStringRange;
+                        
+                        if (returnRange.length <= 2 && self.contentText.length > 1) {//为的是长按选择的文字永远大于或等于2个，方便拖动
+                            returnRange.length = 2;
+                        }
+                        *stop = YES;
+                        
+                    }
+                    
+                }];
+                
+            }
+            
+        }
+    }
+    
+    return returnRange;
+}
+
+
 
 @end

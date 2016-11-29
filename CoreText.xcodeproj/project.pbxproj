@@ -24,6 +24,7 @@
 		745E07281C0A9A0700044D20 /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E07271C0A9A0700044D20 /* CoreTextData.m */; };
 		745E072C1C0B054100044D20 /* Content.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 745E072A1C0AD99D00044D20 /* Content.json */; };
 		745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 745E072E1C0C907800044D20 /* CoreTextImageData.m */; };
+		DB664DC81DED5A6200EC40A8 /* TEMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB664DC71DED5A6200EC40A8 /* TEMagnifierView.m */; };
 		DBDD58A91DE6BD3D00473F9A /* TELabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58A81DE6BD3D00473F9A /* TELabel.m */; };
 		DBDD58AC1DE6D1FC00473F9A /* TELabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58AB1DE6D1FC00473F9A /* TELabelViewController.m */; };
 		DBDD58AF1DE7D8A900473F9A /* TELabelLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDD58AE1DE7D8A900473F9A /* TELabelLayoutManager.m */; };
@@ -97,6 +98,8 @@
 		745E072A1C0AD99D00044D20 /* Content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content.json; sourceTree = "<group>"; };
 		745E072D1C0C907800044D20 /* CoreTextImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextImageData.h; sourceTree = "<group>"; };
 		745E072E1C0C907800044D20 /* CoreTextImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextImageData.m; sourceTree = "<group>"; };
+		DB664DC61DED5A6200EC40A8 /* TEMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEMagnifierView.h; sourceTree = "<group>"; };
+		DB664DC71DED5A6200EC40A8 /* TEMagnifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEMagnifierView.m; sourceTree = "<group>"; };
 		DBDD58A71DE6BD3D00473F9A /* TELabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TELabel.h; sourceTree = "<group>"; };
 		DBDD58A81DE6BD3D00473F9A /* TELabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TELabel.m; sourceTree = "<group>"; };
 		DBDD58AA1DE6D1FC00473F9A /* TELabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TELabelViewController.h; sourceTree = "<group>"; };
@@ -254,6 +257,8 @@
 				745E072E1C0C907800044D20 /* CoreTextImageData.m */,
 				DBDD58B51DEC23B500473F9A /* TECursorView.h */,
 				DBDD58B61DEC23B500473F9A /* TECursorView.m */,
+				DB664DC61DED5A6200EC40A8 /* TEMagnifierView.h */,
+				DB664DC71DED5A6200EC40A8 /* TEMagnifierView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				744CF3591DEC71C200AE61A4 /* CirculViewController.m in Sources */,
 				74343AC91C098DFF00A310A0 /* AppDelegate.m in Sources */,
 				74343B0A1C0A018800A310A0 /* UIView+frameAdjust.m in Sources */,
+				DB664DC81DED5A6200EC40A8 /* TEMagnifierView.m in Sources */,
 				DBDD58B41DE820C300473F9A /* TETextAttachment.m in Sources */,
 				74343B051C0A011100A310A0 /* CTDisplayView.m in Sources */,
 				745E072F1C0C907800044D20 /* CoreTextImageData.m in Sources */,

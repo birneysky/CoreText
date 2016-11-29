@@ -13,4 +13,6 @@
 
 @property (nonatomic,strong) CoreTextData* data;
 
+@property (nonatomic,readonly) UIImage* image;
+
 @end

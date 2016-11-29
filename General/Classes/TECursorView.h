@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger,TECursorStyle){
 
 @property (nonatomic,strong) UIColor* color;
 
+@property (nonatomic,assign) CGPoint position;
 
 - (instancetype)initWithFrame:(CGRect)frame style:(TECursorStyle)style;
 

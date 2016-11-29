@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightContstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *trailingConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -73,9 +74,11 @@
     //self.ctView.backgroundColor = [UIColor yellowColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.imageView.image = self.ctView.image;
 }
 
 @end

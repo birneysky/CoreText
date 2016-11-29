@@ -39,7 +39,7 @@
 //        y -= (height-baseLineHeight)/2;
 //
 //        return CGRectMake(0, y, width, height);
-        return CGRectMake(0, 0, self.image.size.width * 0.5, self.image.size.height* 0.5);
+        return self.bounds;//CGRectMake(0, 0, self.image.size.width * 0.5, self.image.size.height* 0.5);
     }
 
     

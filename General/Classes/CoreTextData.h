@@ -59,7 +59,11 @@
 
 @property (nonatomic,assign) CGFloat height;
 
+@property (nonatomic,copy) NSString* contentText;
+
 @property (nonatomic,strong) NSArray* imageArray;
+
+
 
 /**
  根据用户手指的坐标获得 文字在整个字符串的index
@@ -69,5 +73,17 @@
  @return 文字索引
  */
 - (CFIndex)touchIndexOfTouchPoint:(CGPoint)point rectHeight:(CGFloat)height;
+
+
+/**
+ 根据字符索引返回，返回索引对应的字符区间
+
+ @param index 文字索引
+ @return 字符区间
+ */
+- (NSRange)characterRangeAtIndex:(NSInteger)index;
+
+
+
 
 @end
